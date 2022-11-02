@@ -1,25 +1,20 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    
-}
     
 .navbar{
     
-    height: 100vh;
-    width: 100%;
-        
-
+    height: 100px;
+    width: 270px;
+    margin-bottom: 170px;
+    margin-left:150vh;
+    display:inline-block;
 }
         
 body{
     
-    height: 100px;
-    background-image:url("Uçak.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
 }
     
     
@@ -28,9 +23,8 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
+
+
        
 }
     
@@ -44,4 +38,8 @@ nav ul li{
     nav ul li a{
     color: blue;
     
+}
+hr
+{
+    width: 50vh;
 }
