@@ -14,12 +14,12 @@ body
 }
 .logo
 {
-    width:10%;
-    height:10%;
+    width:20%;
+    height:20%;
 }
 header
 {
-    background-color: #55d6aa;
+    background-color: #0034a8;
 }
 header::after
 {
@@ -55,7 +55,7 @@ nav li
 
 nav a
 {
-color: #444;
+color: white;
 text-decoration: none;
 text-transform: uppercase;
 
@@ -63,7 +63,7 @@ text-transform: uppercase;
 
 nav a:hover
 {
-    color: blueviolet;
+    color:#f4b80f;
 }
 
 nav a::before
@@ -71,7 +71,7 @@ nav a::before
     content: '';
     display: block;
     height: 5px;
-    background-color: #444;
+    background-color: white;
     position: absolute;
     top:0;
     width: 0%;
