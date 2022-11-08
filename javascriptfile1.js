@@ -11,7 +11,7 @@ alert("Please fill the blank fields!");
 }
 else
 {
-
 alert("Name: " + name + " Surname: " + surname + "\n" + "Phone Number: " + phone + " Email: " + email);
 }
+
 }

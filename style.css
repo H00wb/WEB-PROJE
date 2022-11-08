@@ -187,3 +187,20 @@ input.contactus
     from {opacity: .4}
     to {opacity: 1}
 }
+
+#background1
+{
+background-color: white;
+height: 350px;
+width: 800px;
+margin: auto;
+margin-top: 50px;
+}
+
+
+#button1
+{
+    background-color: #0034a8;
+    opacity:0.9;
+    color: white;
+}
