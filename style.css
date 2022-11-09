@@ -1,7 +1,7 @@
 body
 {
     margin:0;
-    background-image: url("ucakyeni2.jpeg");
+    background-image: url("arkaplan.png");
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -100,21 +100,43 @@ input.contactus
     margin-bottom: 10%;
 }
 
-* {box-sizing:border-box}
 
-/* Slideshow container */
+
+.wrapper
+{
+display: flex;
+}
+
+.wrapper .left
+.wrapper .right
+{
+width: 50%;
+height: 100vh;
+}
+
+.wrapper .left
+{
+    background-color: #005CE2;
+    opacity:0.9;
+}
+
+.wrapper .right
+{
+    background-color:white;
+}
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
 }
 
-/* Hide the images by default */
+
 .mySlides {
     display: none;
 }
 
-/* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -130,18 +152,18 @@ input.contactus
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -151,17 +173,6 @@ input.contactus
     width: 100%;
     text-align: center;
 }
-
-/* Number text (1/3 etc) */
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
     cursor: pointer;
     height: 15px;
@@ -177,7 +188,7 @@ input.contactus
     background-color: #717171;
 }
 
-/* Fading animation */
+
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -192,15 +203,21 @@ input.contactus
 {
 background-color: white;
 height: 350px;
-width: 800px;
+width: 700px;
 margin: auto;
 margin-top: 50px;
 }
 
 
-#button1
+.footer
 {
-    background-color: #0034a8;
-    opacity:0.9;
-    color: white;
+margin-left: 5px;
+margin-top: 70px;
+position:absolute;
+width:99%;
+height:10%;
+border-style: solid;
+border-radius: 10px;
+border-color: #0034a8;
+
 }
