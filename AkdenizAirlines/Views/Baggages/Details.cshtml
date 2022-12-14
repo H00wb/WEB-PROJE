@@ -1,0 +1,50 @@
+﻿@model AkdenizAirlines.Models.Baggage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Baggage</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.weight)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.weight)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.volume)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.volume)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.baggage_type)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.baggage_type)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.BaggageId }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

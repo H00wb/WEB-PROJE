@@ -1,0 +1,53 @@
+﻿@model IEnumerable<AkdenizAirlines.Models.Baggage>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.weight)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.volume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.baggage_type)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.weight)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.volume)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.baggage_type)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.BaggageId }) |
+                @Html.ActionLink("Details", "Details", new { id=item.BaggageId }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.BaggageId })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
